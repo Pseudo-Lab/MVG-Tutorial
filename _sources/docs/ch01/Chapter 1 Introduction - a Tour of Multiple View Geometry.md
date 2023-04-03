@@ -1,6 +1,3 @@
-# Chapter 1
-Introduction - a Tour of Multiple View Geometry
-
 # Introduction - a Tour of Multiple View Geometry
 
 먼저 이 챕터에서는 Introdution에 걸맞게 이 책에서 다루는 주요 개념들을 소개합니다. 하지만 이후 학습할 내용들에 대한 축약이며, 자세한 내용은 이후 챕터에서 다루도록 합니다.
