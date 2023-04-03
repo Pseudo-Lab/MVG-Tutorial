@@ -28,8 +28,9 @@
   - ```yaml
 	format: jb-book
 	root: docs/index
-	chapters:
+	sections:
 	- file: docs/ch1/Introduction
+	- file: docs/ch2/projective...
     ```
 
   - 위 코드 참조하여 추가한 페이지 이름 변경
@@ -41,6 +42,11 @@
     ```
 
 - Jupyter book build
+
+  - ```
+    cd MVG-Tutorial
+    jupyter-book build book/
+    ```
 
   - 변경 내용 push 할 것
 
