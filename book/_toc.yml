@@ -1,5 +1,6 @@
 format: jb-article
 root: intro
-chapters:
+sections:
 - file: docs/Chapter 1 Introduction - a Tour of Multiple View Geometry
+  title: "Introduction"
 
