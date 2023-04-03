@@ -19,7 +19,7 @@
 - 페이지 작성 파일 이동
 
   - `MVG-Tutorial/book/docs` 에 위치시킬 것
-  - `ch1` 폴더 내에 작성
+  - `ch%2d` 형식의 폴더 내에 작성
 
 - `_toc.yml` 변경
 
@@ -40,27 +40,13 @@
     pip install -U jupyter-book
     ```
 
-- 폴더 이동
-
-  - ```
-    cd pytorch-guide
-    ```
-
-- (로컬) Jupyter book build
-
-  - ```
-    jupyter-book build book/
-    ```
-
-  - cmd 창 내 `Or paste this line directly into your browser bar:` 이하의 링크를 사용하면 로컬에서 jupyter book 을 빌드할 수 있음
-
-- (온라인) Jupyter book build
+- Jupyter book build
 
   - 변경 내용 push 할 것
 
   - ```python
     pip install ghp-import
-    ghp-import -n -p -f book/_build/html -m "20-08-09 publishing"
+    ghp-import -n -p -f book/_build/html -m "chapter X publishing"
     ```
 
   - https://pseudo-lab.github.io/pytorch-guide/ 링크 접속
