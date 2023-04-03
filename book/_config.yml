@@ -1,6 +1,6 @@
 #######################################################################################
 # Book settings
-title : PseudoLab [Study Name]
+title : PseudoLab [MVG-Tutorial]
 author: PseudoLab
 logo: 'PseudoLab_logo.png'
 
@@ -25,7 +25,7 @@ notebook_interface            : "notebook"
 #######################################################################################
 # Launch button settings
 repository:
-  url                         : https://github.com/pseudo-lab/Jupyter-Book-Template
+  url                         : https://github.com/pseudo-lab/MVG-Tutorial
   path_to_book                : "book"
 
 latex:
