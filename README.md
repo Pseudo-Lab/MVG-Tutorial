@@ -1,48 +1,66 @@
-# Jupyter Book template for PseudoLab studies
+# MVG-Tutorial
 
-This is a template for configuring Jupyter Book pages for PseudoLab studies. 
+- 빌드 페이지 : https://pseudo-lab.github.io/MVG-Tutorial
+- reference1: https://github.com/Pseudo-Lab/Jupyter-Book-Template
+- reference2: https://github.com/Pseudo-Lab/pytorch-guide
+- reference3: https://github.com/Pseudo-Lab/SegCrew-Book
 
-1. make a new repo in PseudoLab Github with the study group name as repo name
+## jupyter book build
 
-   ```
-   Pseudo-Lab/2021-Kaggle-Study
-   ```
+- init
+  - 페이지 작성은 `.md`, `.ipynb` 형식으로 작성
 
-2. clone the repo on your local computer
+- git clone 
 
-   ```
-   git clone https://github.com/Pseudo-Lab/2021-Kaggle-Study.git
-   ```
+  - ```
+    git clone https://github.com/Pseudo-Lab/MVG-Tutorial.git
+    ```
 
-3. clone this repo
+- 페이지 작성 파일 이동
 
-   ```
-   git clone https://github.com/Pseudo-Lab/Jupyter-Book-Template
-   ```
+  - `MVG-Tutorial/book/docs` 에 위치시킬 것
+  - `ch1` 폴더 내에 작성
 
-4. move `book` folder to the `2021-Kaggle-Study` folder which has been created at step 2. 
+- `_toc.yml` 변경
 
-5. change the contents in `book/docs` folder with the contents from your studies
+  - `MVG-Tutorial/book` 내 `_toc.yml` 파일 변경
 
-6. configure `_toc.yml` file
+  - ```yaml
+	format: jb-book
+	root: docs/index
+	chapters:
+	- file: docs/ch1/Introduction
+    ```
 
-7. build the book using Jupyter Book command
+  - 위 코드 참조하여 추가한 페이지 이름 변경
 
-   ```
-   jupyter-book build 2021-Kaggle-Study/book
-   ```
+- Jupyter book 설치
 
-8. sync your local and remote repositories
+  - ```
+    pip install -U jupyter-book
+    ```
 
-   ```
-   cd 2021-Kaggle-Study
-   git add .
-   git commit -m "adding my first book!"
-   git push
-   ```
+- 폴더 이동
 
-9. Publish your Jupyter Book with Github Pages
+  - ```
+    cd pytorch-guide
+    ```
 
-   ```
-   ghp-import -n -p -f book/_build/html -m "initial publishing"
-   ```
+- (로컬) Jupyter book build
+
+  - ```
+    jupyter-book build book/
+    ```
+
+  - cmd 창 내 `Or paste this line directly into your browser bar:` 이하의 링크를 사용하면 로컬에서 jupyter book 을 빌드할 수 있음
+
+- (온라인) Jupyter book build
+
+  - 변경 내용 push 할 것
+
+  - ```python
+    pip install ghp-import
+    ghp-import -n -p -f book/_build/html -m "20-08-09 publishing"
+    ```
+
+  - https://pseudo-lab.github.io/pytorch-guide/ 링크 접속
