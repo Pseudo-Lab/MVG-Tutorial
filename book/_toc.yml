@@ -1,7 +1,5 @@
 format: jb-article
 root: intro
-sections:
-- file: docs/markdown-example
-  title: "markdown \uC608\uC2DC"
-- file: docs/notebook-example
-  title: ".ipynb \uD30C\uC77C \uC608\uC2DC"
+chapters:
+- file: docs/Chapter 1 Introduction - a Tour of Multiple View Geometry"
+
