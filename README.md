@@ -35,6 +35,13 @@
 
   - 위 코드 참조하여 추가한 페이지 이름 변경
 
+- git commit & push
+  - ```
+    cd MVG-Tutorial
+    git add .
+    git commit -a
+    git push
+    ```
 - Jupyter book 설치
 
   - ```
@@ -44,7 +51,6 @@
 - Jupyter book build
 
   - ```
-    cd MVG-Tutorial
     jupyter-book build book/
     ```
 
