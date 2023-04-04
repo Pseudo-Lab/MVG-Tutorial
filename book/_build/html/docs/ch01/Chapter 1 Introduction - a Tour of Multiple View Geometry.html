@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction - a Tour of Multiple View Geometry &#8212; PseudoLab [MVG-Tutorial]</title>
   
   
@@ -43,6 +44,7 @@
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
@@ -68,7 +70,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="[가짜연구소] MVG-Tutorial" href="../../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -375,11 +377,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="introduction-a-tour-of-multiple-view-geometry">
-<h1>Introduction - a Tour of Multiple View Geometry<a class="headerlink" href="#introduction-a-tour-of-multiple-view-geometry" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-a-tour-of-multiple-view-geometry">
+<h1>Introduction - a Tour of Multiple View Geometry<a class="headerlink" href="#introduction-a-tour-of-multiple-view-geometry" title="Permalink to this heading">#</a></h1>
 <p>먼저 이 챕터에서는 Introdution에 걸맞게 이 책에서 다루는 주요 개념들을 소개합니다. 하지만 이후 학습할 내용들에 대한 축약이며, 자세한 내용은 이후 챕터에서 다루도록 합니다.</p>
-<div class="section" id="introduction-the-ubiquitous-projective-geometry">
-<h2>1.1 Introduction - the ubiquitous projective geometry<a class="headerlink" href="#introduction-the-ubiquitous-projective-geometry" title="Permalink to this headline">#</a></h2>
+<section id="introduction-the-ubiquitous-projective-geometry">
+<h2>1.1 Introduction - the ubiquitous projective geometry<a class="headerlink" href="#introduction-the-ubiquitous-projective-geometry" title="Permalink to this heading">#</a></h2>
 <p>우리는 모두 사영 변환에 익숙합니다. 실제로 세상의 모든 물체들을 볼 때, 우리는 사영 통해 바뀐 풍경으로 물체들을 바라보고 있습니다. 보는 시점에 따라 원이 원이 아니게 보이는 경우, 정사각형이 정사각형이 아니게 보는 경우가 사영 변환의 한 예시입니다.</p>
 <p>사영 <strong>변환에 의해 보존되는 기하학의 특성</strong></p>
 <ul class="simple">
@@ -420,8 +422,8 @@ X' = H_{(n+1) \times (n+1)}X
 <li><p>이러한 이상점들을 동차 좌표계에서는 마지막 좌표가 0인 것으로 표기합니다.</p></li>
 <li><p>사영 기하학에서의 변환은 이상점이 유지되지 않습니다. 따라서 무한대의 선 또한 변환됩니다.</p></li>
 </ol>
-<div class="section" id="affine-and-euclidean-geometry">
-<h3>1.1.1 Affine and Euclidean Geometry<a class="headerlink" href="#affine-and-euclidean-geometry" title="Permalink to this headline">#</a></h3>
+<section id="affine-and-euclidean-geometry">
+<h3>1.1.1 Affine and Euclidean Geometry<a class="headerlink" href="#affine-and-euclidean-geometry" title="Permalink to this heading">#</a></h3>
 <p>지금까지 유클리드 공간에 이상점을 추가해 사영 공간을 얻을 수 있는 것을 보았습니다. 이제 반대로 가는 과정을 고려해봅시다. 아래에서는 주로 2차원과 3차원 사영 공간에 대한 이야기를 합니다.</p>
 <p><strong>Affine Geometry</strong></p>
 <p>아핀 기하학은 사영 기하학에 선의 평행에 대한 개념을 추가한 것이라고 볼 수 있습니다. 이 개념을 추가하는 방법으로 본 책에서는 어떤 특정 선을 임의로 생성하고 그 선을 **무한선(Line at infinity)**으로 정의하는 과정을 갖습니다. 이렇게 정의한 <strong>무한선과 교차하는 두 직선이 있다면 그 두 직선은 평행하다</strong>고 정의합니다.</p>
@@ -464,10 +466,10 @@ X^2+Y^2+Z^2 = 0; T=0
 <p>이러한 곡선을 **절대 원뿔(Absolute conic)**으로 정의하며, 이후 챕터에서 camera calibration과 연관하여 설명합니다.</p>
 <p>절대 원뿔은 유클리드 좌표계에서만 위의 방정식으로 정의됩니다. 일반적으로 이 책에서는 사영공간에서 특정 평면을 무한면으로, 특정 원뿔을 절대 원뿔로 지정해 유도한 3차원 유클리드 공간을 가정합니다.</p>
 <p>이후 챕터에서 절대 원뿔을 이용해 3차원 유클리드 기하를 결정하는 방법이 제시됩니다.</p>
-</div>
-</div>
-<div class="section" id="camera-projections">
-<h2>1.2 Camera projections<a class="headerlink" href="#camera-projections" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section id="camera-projections">
+<h2>1.2 Camera projections<a class="headerlink" href="#camera-projections" title="Permalink to this heading">#</a></h2>
 <p>3차원의 세계를 2차원 이미지로 표현하는 것과 그 역이 이 책의 주요한 주제입니다. 3차원에서 2차원으로의 변환은 사영 변환의 과정입니다. 이러한 과정을 모델링 하기 위해 우리는 중앙 사영 방식을 선택합니다. 중앙 사영 공간의 한 지점에서 나오는 광선이 사영 중심인 공간의 고정된 지점을 통해 2D 이미지의 좌표에 그리는 것을 말합니다. 이 광선이 이미지 평면으로 선택된 공간의 특정 좌표와 교차하며, 이 교차점이 이미지에 그려집니다.</p>
 <p>이 모델은 빛의 광선이 카메라 렌즈를 통과해 필름이나 디지털 장치에 그려지는, 간단한 카메라 모델(Pinhole camera)에 사용됩니다. 초점 및 렌드 두께와 같은 효과를 무시하면, 이 모델에서는 모든 광선이 렌즈 중심을 통과합니다.</p>
 <p>사영 기하학을 이미지 처리에 적용할 때, 우리는 일반적으로 이상점을 갖는 <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>와 동일한 3차원 사영 공간으로 모델링 합니다. 이미지의 경우는 2차원의 사영 평면 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>로 모델링합니다. 중앙 사영은 단순하게 <span class="math notranslate nohighlight">\(\mathbb{P}^3\)</span>에서 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>로 매핑하는 것입니다. 동차 좌표 <span class="math notranslate nohighlight">\((X,Y,Z,T)^\intercal\)</span>로 나타낼 수 있는 <span class="math notranslate nohighlight">\(\mathbb{P}^3\)</span>에서 사영의 중심을 <span class="math notranslate nohighlight">\((0,0,0,1)^\intercal\)</span>이라 할 때, <span class="math notranslate nohighlight">\(X, Y, Z\)</span>는 고정되고 <span class="math notranslate nohighlight">\(T\)</span>만 변화한다면, <span class="math notranslate nohighlight">\((X,Y,Z,T)^\intercal\)</span>의 모든 집합은 사영의 중심점을 지나 모두 같은 좌표로 매핑이 됩니다. 결국 이미지 좌표는 동차 좌표 <span class="math notranslate nohighlight">\((X,Y,Z)^\intercal\)</span>을 갖는 평면 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>의 한 좌표가 됩니다. 따라서 매핑 행렬 <span class="math notranslate nohighlight">\(P\)</span>는 <span class="math notranslate nohighlight">\([I_{3 \times 3} | 0_3]\)</span>인 <span class="math notranslate nohighlight">\(3 \times 4\)</span> 행렬이 됩니다. 이러한 <span class="math notranslate nohighlight">\(P\)</span>를 Camera matrix 또는 Projection matrix라고 합니다.</p>
@@ -487,9 +489,9 @@ X^2+Y^2+Z^2 = 0; T=0
 <p><strong>그림에서의 3차원 재구성</strong></p>
 <p>![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%203.png)</p>
 <p>몇 가지 가정이 필요하기는 하지만 사영 기하학 기술을 사용하면 단일 이미지에서 장면을 재구성할 수 있으며, 그림 1.2에서 그 예시를 보이고 있습니다.</p>
-</div>
-<div class="section" id="reconstruction-from-more-than-one-view">
-<h2>1.3 Reconstruction from more than one view<a class="headerlink" href="#reconstruction-from-more-than-one-view" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="reconstruction-from-more-than-one-view">
+<h2>1.3 Reconstruction from more than one view<a class="headerlink" href="#reconstruction-from-more-than-one-view" title="Permalink to this heading">#</a></h2>
 <p>이 책의 주요한 주제 중 하나입니다. 가장 간단한 두 개의 이미지의 경우를 먼저 고려해봅니다.</p>
 <p>두 개의 시점의 경우, <span class="math notranslate nohighlight">\(x_i \leftrightarrow x_i'\)</span>의 관계를 가지는 두 이미지가 있다고 합시다. 이 둘은 각각 3D points <span class="math notranslate nohighlight">\(X_i\)</span>로의 변환을 위한 camera matrix <span class="math notranslate nohighlight">\(P\)</span>와 <span class="math notranslate nohighlight">\(P'\)</span>를 갖습니다. 따라서 <span class="math notranslate nohighlight">\(PX_i=x_i\)</span>이며, <span class="math notranslate nohighlight">\(P'X_i=x_i'\)</span>입니다. 하지만 우리는 각 이미지 좌표 매칭 쌍 외에 우리는 <span class="math notranslate nohighlight">\(P, P', X_i\)</span> 모두 모르는 상태입니다. 이 뒤의 챕터에서 이러한 것들을 결정하는 방법에 대해 다룹니다. 여기서는 간단하게만 이야기 하겠습니다.</p>
 <p>3차원 점의 위치를 특정하는 것은 불가능합니다. 아무리 매칭 쌍이 많이 주어졌다고 해도 3차원 좌표를 모르는 건 마찬가지입니다. 여기서 카메라가 보정되어 있지 않은 경우, 이 문제는 사영 변환으로 표현할 수 있습니다.</p>
@@ -510,13 +512,13 @@ P_jX_i = (P_jH^{-1})(HX_i)
 </ol>
 <p>이에 대한 자세한 부분은 이후 챕터에서 다룹니다.</p>
 <p>지금까지 2 View geometry 까지의 내용을 개요 형태로 훑어보았습니다. 이후 챕터 2에서부터는 위에서 간단히 설명한 내용들을 자세하게 살펴보고 갑니다.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="reference">
-<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">#</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="reference">
+<h1>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h1>
 <p>그림 1.1, 1.2 및 내용 : Multiple View Geometry in Computer Vision 책</p>
 <p>철로 그림 : <a class="reference external" href="https://pixabay.com/photos/railway-rocks-sunset-sun-sunlight-1555348/">https://pixabay.com/photos/railway-rocks-sunset-sun-sunlight-1555348/</a></p>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
