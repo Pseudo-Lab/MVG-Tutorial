@@ -68,6 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/PseudoLab_logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Introduction - a Tour of Multiple View Geometry" href="../ch02/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html" />
     <link rel="prev" title="[가짜연구소] MVG-Tutorial" href="../../intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -161,6 +162,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction - a Tour of Multiple View Geometry</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../ch02/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html">Introduction - a Tour of Multiple View Geometry</a></li>
 
 </ul>
 
@@ -427,7 +430,7 @@ X' = H_{(n+1) \times (n+1)}X
 <p>지금까지 유클리드 공간에 이상점을 추가해 사영 공간을 얻을 수 있는 것을 보았습니다. 이제 반대로 가는 과정을 고려해봅시다. 아래에서는 주로 2차원과 3차원 사영 공간에 대한 이야기를 합니다.</p>
 <p><strong>Affine Geometry</strong></p>
 <p>아핀 기하학은 사영 기하학에 선의 평행에 대한 개념을 추가한 것이라고 볼 수 있습니다. 이 개념을 추가하는 방법으로 본 책에서는 어떤 특정 선을 임의로 생성하고 그 선을 **무한선(Line at infinity)**으로 정의하는 과정을 갖습니다. 이렇게 정의한 <strong>무한선과 교차하는 두 직선이 있다면 그 두 직선은 평행하다</strong>고 정의합니다.</p>
-<p>![railway-g9828792c3_1920.jpg](figures/Chapter 1 Introduction - a Tour of Multiple View Geometry/railway-g9828792c3_1920.jpg)</p>
+<p><img alt="railway-g9828792c3_1920.jpg" src="../../_images/railway-g9828792c3_1920.jpg" /></p>
 <p>예를 들자면, 위와 같은 철로를 생각해볼 수 있겠습니다. 이러한 이미지 평면에서 무한선은 수평선으로 나타납니다. 지금 보면 철로 양 쪽의 쭉 뻗어있는 부분들이 결국 수평선에서 만나는 것을 보실 수 있는데요, 이것이 무한점에서 만나는 두 직선이라는 것을 이해하실 수 있을 것입니다. 이렇게 무한선을 설정하면 평면에서 직선의 평행을 정의할 수 있습니다.</p>
 <p>이렇게 무한선을 가진 사영 평면의 기하학을 아핀 기하학(Affine Geometry)라 하고, 한 공간의 무한선을 다른 공간의 무한선에 매핑하는 것을 아핀 변환이라고 합니다. 결국 아핀 기하학은 사영 기하학의 특정 형태라고 볼 수 있습니다.</p>
 <p>정리하면 아래와 같습니다.</p>
@@ -474,12 +477,12 @@ X^2+Y^2+Z^2 = 0; T=0
 <p>이 모델은 빛의 광선이 카메라 렌즈를 통과해 필름이나 디지털 장치에 그려지는, 간단한 카메라 모델(Pinhole camera)에 사용됩니다. 초점 및 렌드 두께와 같은 효과를 무시하면, 이 모델에서는 모든 광선이 렌즈 중심을 통과합니다.</p>
 <p>사영 기하학을 이미지 처리에 적용할 때, 우리는 일반적으로 이상점을 갖는 <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>와 동일한 3차원 사영 공간으로 모델링 합니다. 이미지의 경우는 2차원의 사영 평면 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>로 모델링합니다. 중앙 사영은 단순하게 <span class="math notranslate nohighlight">\(\mathbb{P}^3\)</span>에서 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>로 매핑하는 것입니다. 동차 좌표 <span class="math notranslate nohighlight">\((X,Y,Z,T)^\intercal\)</span>로 나타낼 수 있는 <span class="math notranslate nohighlight">\(\mathbb{P}^3\)</span>에서 사영의 중심을 <span class="math notranslate nohighlight">\((0,0,0,1)^\intercal\)</span>이라 할 때, <span class="math notranslate nohighlight">\(X, Y, Z\)</span>는 고정되고 <span class="math notranslate nohighlight">\(T\)</span>만 변화한다면, <span class="math notranslate nohighlight">\((X,Y,Z,T)^\intercal\)</span>의 모든 집합은 사영의 중심점을 지나 모두 같은 좌표로 매핑이 됩니다. 결국 이미지 좌표는 동차 좌표 <span class="math notranslate nohighlight">\((X,Y,Z)^\intercal\)</span>을 갖는 평면 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>의 한 좌표가 됩니다. 따라서 매핑 행렬 <span class="math notranslate nohighlight">\(P\)</span>는 <span class="math notranslate nohighlight">\([I_{3 \times 3} | 0_3]\)</span>인 <span class="math notranslate nohighlight">\(3 \times 4\)</span> 행렬이 됩니다. 이러한 <span class="math notranslate nohighlight">\(P\)</span>를 Camera matrix 또는 Projection matrix라고 합니다.</p>
 <p>정리하자면 공간의 한 점에 작용하는 카메라의 매핑은 아래와 같은 동차 좌표의 선형 매핑으로 표현할 수 있습니다.</p>
-<p>![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled.png)</p>
+<p><img alt="Untitled" src="../../_images/Untitled.png" /></p>
 <p>또한, 모든 점이 한 평면에 존재하는 경우 아래와 같은 수식으로 축약될 수 있습니다.</p>
-<p>![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%201.png)</p>
+<p><img alt="Untitled" src="../../_images/Untitled1.png" /></p>
 <p><strong>점으로서의 카메라</strong></p>
 <p>중앙 사영에서 <span class="math notranslate nohighlight">\(\mathbb{P}^3\)</span>의 점들은 위에서 설명한 camera matrix의 곱에 의해 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>의 점들로 매핑되며, 사영 중심을 통과하는 광선의 모든 점들은 동일한 좌표로 매핑됩니다. 이미지 사영의 목적에서는 이러한 광선에 있는 모든 점들을 동일한 것으로 간주할 수 있습니다. 또는, 더 나아가 중심을 통과하는 광선이 하나의 점을 표현한다고도 생각할 수 있습니다. 따라서 모든 이미지 점들의 집합은 카메라 중심을 통과하는 광선의 집합과 동일하다고도 볼 수 있습니다.</p>
-<p>![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%202.png)</p>
+<p><img alt="Untitled" src="../../_images/Untitled2.png" /></p>
 <p>위 그림 1.1에서 카메라 센터를 통해 이미지가 사영되는 것을 보여줍니다. a는 이미지 좌표가 카메라 중심을 지나 사영되는 것을, b는 그 좌표들이 어떤 한 평면 상에 사영되는 것을 보여줍니다. 또한, c는 다른 평면이더라도 같은 카메라 중심을 가지면 같은 좌표로 사영되는 것을 보여줍니다. d는 카메라 중심이 이동하게 되면, 일반적으로 그 이미지는 사영 변환과 관계가 없으나, e처럼 같은 평면에 존재한다면 사영 변환을 통해 서로를 이동할 수 있습니다.</p>
 <p>위와 같은 원리에 의해 동일한 카메라 중심을 지나는 이미지는 사영 기하학에서 동일하다고 볼 수 있습니다. 따라서 이미지를 볼 때는 이미지에 대한 특정 좌표계를 지정해야 하며, 이는 즉 특정한 카메라 행렬을 지정하는 것과 같습니다. 간단하게 이야기하면 **시야(Field of View)**를 지정한다고 볼 수 있고, 이 시야를 무시하면 동일 카메라 중심에서 획득한 모든 이미지는 동일하다고 볼 수 있습니다.</p>
 <p><strong>보정된 카메라(Calibrated Camera)</strong></p>
@@ -487,7 +490,7 @@ X^2+Y^2+Z^2 = 0; T=0
 <p>3차원의 유클리드 기하학은 <span class="math notranslate nohighlight">\(\mathbb{P}^3\)</span>의 특정 평면을 무한면으로 지정하고 해당 평면의 특정 원뿔을 절대 원뿔로 지정해서 결정합니다. 무한면에서 원뿔형인 절대 원뿔 곡선은 이미지에 원뿔로 사영되어야 합니다. 이 결과를 **절대 원뿔의 사영(the Image of the Absolute Conic)**이라고 합니다. 이미지에서 IAC의 위치를 알면 <strong>카메라가 보정되었다(Camera Calibration)</strong> 라고 말합니다.</p>
 <p>카메라가 보정되면, 이미지의 두 지점에서 back-projected 된 두 광선 사이의 각도를 결정할 수 있습니다. 앞에서 절대 원뿔 곡선과 무한면에서 만나는 위치에 의해 공간의 두 선 사이의 각도가 정해지는 것을 보았습니다. 보정된 카메라에서 무한면과 절대 원뿔은 이미지 평면에서 IAC에 일대일로 사영됩니다. 결국 IAC를 알면 광선 사이의 각도를 측정하거나 이미지 패치로 표현되는 시야를 계산할 수 있고, 이미지의 타원이 원뿔로 back-projected되는지 알 수 있습니다. 이후 챕터에서 이러한 과정을 통해 어떻게 재구성된 장면의 유클리드 구조를 결정하는데 도움이 되는지 알 수 있습니다.</p>
 <p><strong>그림에서의 3차원 재구성</strong></p>
-<p>![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%203.png)</p>
+<p><img alt="Untitled" src="../../_images/Untitled3.png" /></p>
 <p>몇 가지 가정이 필요하기는 하지만 사영 기하학 기술을 사용하면 단일 이미지에서 장면을 재구성할 수 있으며, 그림 1.2에서 그 예시를 보이고 있습니다.</p>
 </section>
 <section id="reconstruction-from-more-than-one-view">
@@ -559,6 +562,15 @@ P_jX_i = (P_jH^{-1})(HX_i)
         <p class="prev-next-subtitle">previous</p>
         <p class="prev-next-title">[가짜연구소] MVG-Tutorial</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="../ch02/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Introduction - a Tour of Multiple View Geometry</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   

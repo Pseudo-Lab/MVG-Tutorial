@@ -65,7 +65,7 @@ $$
 
 아핀 기하학은 사영 기하학에 선의 평행에 대한 개념을 추가한 것이라고 볼 수 있습니다. 이 개념을 추가하는 방법으로 본 책에서는 어떤 특정 선을 임의로 생성하고 그 선을 **무한선(Line at infinity)**으로 정의하는 과정을 갖습니다. 이렇게 정의한 **무한선과 교차하는 두 직선이 있다면 그 두 직선은 평행하다**고 정의합니다.
 
-![railway-g9828792c3_1920.jpg](figures/Chapter 1 Introduction - a Tour of Multiple View Geometry/railway-g9828792c3_1920.jpg)
+![railway-g9828792c3_1920.jpg](figures/railway-g9828792c3_1920.jpg)
 
 예를 들자면, 위와 같은 철로를 생각해볼 수 있겠습니다. 이러한 이미지 평면에서 무한선은 수평선으로 나타납니다. 지금 보면 철로 양 쪽의 쭉 뻗어있는 부분들이 결국 수평선에서 만나는 것을 보실 수 있는데요, 이것이 무한점에서 만나는 두 직선이라는 것을 이해하실 수 있을 것입니다. 이렇게 무한선을 설정하면 평면에서 직선의 평행을 정의할 수 있습니다. 
 
@@ -130,17 +130,17 @@ $$
 
 정리하자면 공간의 한 점에 작용하는 카메라의 매핑은 아래와 같은 동차 좌표의 선형 매핑으로 표현할 수 있습니다.
 
-![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled.png)
+![Untitled](figures/Untitled.png)
 
 또한, 모든 점이 한 평면에 존재하는 경우 아래와 같은 수식으로 축약될 수 있습니다.
 
-![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%201.png)
+![Untitled](figures/Untitled1.png)
 
 **점으로서의 카메라**
 
 중앙 사영에서 $\mathbb{P}^3$의 점들은 위에서 설명한 camera matrix의 곱에 의해 $\mathbb{P}^2$의 점들로 매핑되며, 사영 중심을 통과하는 광선의 모든 점들은 동일한 좌표로 매핑됩니다. 이미지 사영의 목적에서는 이러한 광선에 있는 모든 점들을 동일한 것으로 간주할 수 있습니다. 또는, 더 나아가 중심을 통과하는 광선이 하나의 점을 표현한다고도 생각할 수 있습니다. 따라서 모든 이미지 점들의 집합은 카메라 중심을 통과하는 광선의 집합과 동일하다고도 볼 수 있습니다. 
 
-![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%202.png)
+![Untitled](figures/Untitled2.png)
 
 위 그림 1.1에서 카메라 센터를 통해 이미지가 사영되는 것을 보여줍니다. a는 이미지 좌표가 카메라 중심을 지나 사영되는 것을, b는 그 좌표들이 어떤 한 평면 상에 사영되는 것을 보여줍니다. 또한, c는 다른 평면이더라도 같은 카메라 중심을 가지면 같은 좌표로 사영되는 것을 보여줍니다. d는 카메라 중심이 이동하게 되면, 일반적으로 그 이미지는 사영 변환과 관계가 없으나, e처럼 같은 평면에 존재한다면 사영 변환을 통해 서로를 이동할 수 있습니다.
 
@@ -156,7 +156,7 @@ $$
 
 **그림에서의 3차원 재구성**
 
-![Untitled](figures/Chapter 1 Introduction - a Tour of Multiple View GeometryUntitled%203.png)
+![Untitled](figures/Untitled3.png)
 
 몇 가지 가정이 필요하기는 하지만 사영 기하학 기술을 사용하면 단일 이미지에서 장면을 재구성할 수 있으며, 그림 1.2에서 그 예시를 보이고 있습니다.
 
