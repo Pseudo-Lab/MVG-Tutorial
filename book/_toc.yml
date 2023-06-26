@@ -2,4 +2,6 @@ format: jb-article
 root: intro
 sections:
 - file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry
-- file: docs/ch02/Chapter 1 Introduction - a Tour of Multiple View Geometry
+- file: docs/ch02/Chapter 2 Projective
+- file: docs/ch02/Chapter 2.1
+- file: docs/ch02/Chapter 2.2
