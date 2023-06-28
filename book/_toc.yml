@@ -1,7 +1,11 @@
-format: jb-article
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
 root: intro
-sections:
+chapters:
 - file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry
 - file: docs/ch02/Chapter 2 Projective
-- file: docs/ch02/Chapter 2.1
-- file: docs/ch02/Chapter 2.2
+  section:
+  - file: docs/ch02/Chapter 2.1
+  - file: docs/ch02/Chapter 2.2
