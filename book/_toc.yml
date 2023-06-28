@@ -9,4 +9,4 @@ chapters:
   sections:
   - file: docs/ch02/Chapter 2.1
   - file: docs/ch02/Chapter 2.2
-  - file: examples/python/Chapter2
+  - file: docs/ch02/Chapter2
