@@ -6,6 +6,7 @@ root: intro
 chapters:
 - file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry
 - file: docs/ch02/Chapter 2 Projective
-  section:
+  sections:
   - file: docs/ch02/Chapter 2.1
   - file: docs/ch02/Chapter 2.2
+  - file: examples/python/Chapter2.ipynb
