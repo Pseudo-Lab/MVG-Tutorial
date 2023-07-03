@@ -14,8 +14,7 @@ Felix Kelin에의한 기하 집합의 관점에 있어서 그의 유명한 "Erla
 이 이론을 해석하기 위해서 $\mathbb{P^2}$ 안에있는 어떤 평면은 homogeneous 3-vector인 $\mathbf{x}$로 표현된다 그리고 $\mathbf{Hx}$는 homogeneous 좌표의 선형 매핑이다. 이 이론은 어떤 투영이든 호모지니어스 좌표에서 선형변환처럼 일어난다는것을 주장한다. 그 이론은 여기서는 완전히 증명되진 않는다. 어떤 homogeneous 좌표의invertible한 선형 변형은 투영이다.
 
 **Definition 2.11. 투영변환**
-> 평면 투영 변형은 homogeneous 3-vector에서 non-singular 3x3 행렬에의해 표현되는선형 변환이다  : $$\begin{pmatrix}x\prime_1 \\ x\prime_2 \\ x\prime_3 \end{pmatrix} = \begin{bmatrix} h_{11} & h_{12} & h_{13} \\  h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33}\end{bmatrix} \begin{pmatrix}x_1 \\ x_2 \\ x_3 \end{pmatrix}$$
- 또한 간결하게 $\mathbf{x^\prime = \mathtt{H}x}$ 로 표현한다.
+> 평면 투영 변형은 homogeneous 3-vector에서 non-singular 3x3 행렬에의해 표현되는선형 변환이다 : $\begin{pmatrix}x\prime_1 \\ x\prime_2 \\ x\prime_3 \end{pmatrix} = \begin{bmatrix} h_{11} & h_{12} & h_{13} \\  h_{21} & h_{22} & h_{23} \\ h_{31} & h_{32} & h_{33}\end{bmatrix} \begin{pmatrix}x_1 \\ x_2 \\ x_3 \end{pmatrix}$ 또한 간결하게 $\mathbf{x^\prime = \mathtt{H}x}$ 로 표현한다.
 
 이 방정식에서 발생하는 행렬 $H$는는 곱하기에의해 변할지모른다. 0이아닌 임의의 scale factor에의해서 투영변환을 바꾸지않고. 결과적으로, H는 *homogeneous* 행렬이다. 한지점의 homogeneous표현으로서 표현으로서 오직 행렬 요소의 비율만 중요하기때문이다. 9개의 H 요소중에서 8개의 독립적인 비율들이있다. 따라서 투영변환이 8개의 자유도를 갖는다.
 
