@@ -1,4 +1,4 @@
-# <b>Chapter 2 - 2D Projective Geometry and Transformation
+# <b>Chapter 2 - Projective Geometry and Transformation of 2D
 
 이 챕터에서는 2D projective geometry와 이것을 수식으로 나타내기 위한 표기법을 학습합니다.
 
