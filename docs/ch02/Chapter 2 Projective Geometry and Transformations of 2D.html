@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 2.1 …. &#8212; PseudoLab [MVG-Tutorial]</title>
+    <title>Chapter 2 - Projective Geometry and Transformation of 2D &#8212; PseudoLab [MVG-Tutorial]</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch02/Chapter 2.2';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch02/Chapter 2 Projective Geometry and Transformations of 2D';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Class I. Isometries" href="Chapter2.html" />
-    <link rel="prev" title="Chapter 2.2 …." href="Chapter%202.1.html" />
+    <link rel="next" title="2.1. The 2D projective plane" href="Chapter%202.2%20The%202D%20projective%20plane.html" />
+    <link rel="prev" title="Introduction - a Tour of Multiple View Geometry" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,13 +154,16 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html">Introduction - a Tour of Multiple View Geometry</a></li>
 
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Chapter%202%20Projective.html">Chapter 2 - Projective …</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="Chapter%202.1.html">Chapter 2.2 ….</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Chapter 2.1 ….</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Chapter2.html">Class I. Isometries</a></li>
-
-
-
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#"><strong>Chapter 2 - Projective Geometry and Transformation of 2D</strong></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.2%20The%202D%20projective%20plane.html"><strong>2.1. The 2D projective plane</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.3%20Projective%20transformation.html"><strong>2.2 Project transformation</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.4%20Hierarchy%20of%20Transformation.html">2.3. A hierarchy of transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"><strong>2.4. Recovery of affine and metric properties from images</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch03/Chapter%203%20Projective%20Geometry%20and%20Transformations%20of%203D.html"><b>Chapter 3 - Projective Geometry and Transformation of 3D</b></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch03/Chapter%203.2%20Representing%20and%20transforming%20planes%2C%20lines%20and%20quadrics.html">Chapter 3.2 Representing and transforming planes, lines and quadrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch03/Chapter%203.4%20The%20hierarchy%20of%20transformations.html">3.4 The hierarchy of transformations</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +237,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch02/Chapter 2.2.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch02/Chapter 2 Projective Geometry and Transformations of 2D.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -264,7 +267,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/ch02/Chapter 2.2.md" target="_blank"
+      <li><a href="../../_sources/docs/ch02/Chapter 2 Projective Geometry and Transformations of 2D.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +336,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -344,11 +349,26 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 2.1 ….</h1>
+    <h1>Chapter 2 - Projective Geometry and Transformation of 2D</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>학습 목표</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-projective-plane"><strong>1. <span class="xref myst">2D Projective Plane</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projective-transformation"><strong>2. <span class="xref myst">Projective transformation</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchy-of-transformation"><strong>3. <span class="xref myst">Hierarchy of transformation</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recovery-of-affine-and-metric-properties-from-images"><strong>4. <span class="xref myst">Recovery of affine and metric properties from images</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference"><strong>Reference</strong></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -358,8 +378,45 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-2-1">
-<h1>Chapter 2.1 ….<a class="headerlink" href="#chapter-2-1" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-2-projective-geometry-and-transformation-of-2d">
+<h1><strong>Chapter 2 - Projective Geometry and Transformation of 2D</strong><a class="headerlink" href="#chapter-2-projective-geometry-and-transformation-of-2d" title="Permalink to this heading">#</a></h1>
+<p>이 챕터에서는 2D projective geometry와 이것을 수식으로 나타내기 위한 표기법을 학습합니다.</p>
+<p>Sub-section은 크게 4가지로 이뤄지며 각각 아래와 같습니다.</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="Chapter%202.2%20The%202D%20projective%20plane.html"><span class="doc std std-doc">2D Projective Plane</span></a></p></li>
+<li><p><a class="reference internal" href="Chapter%202.3%20Projective%20transformation.html"><span class="doc std std-doc">Projective transformation</span></a></p></li>
+<li><p><a class="reference internal" href="Chapter%202.4%20Hierarchy%20of%20Transformation.html"><span class="doc std std-doc">Hierarchy of transformation</span></a></p></li>
+<li><p><a class="reference internal" href="Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"><span class="doc std std-doc">Recovery of affine and metric properties from images</span></a></p></li>
+</ol>
+<section id="id1">
+<h2><strong>학습 목표</strong><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="d-projective-plane">
+<h3><strong>1. <a class="reference internal" href="Chapter%202.2%20The%202D%20projective%20plane.html"><span class="doc std std-doc">2D Projective Plane</span></a></strong><a class="headerlink" href="#d-projective-plane" title="Permalink to this heading">#</a></h3>
+<p>2D projective plane에서의 점, 선의 표현과 성질에 대한 내용들을 다루며, Homogeneous coordinates가 무엇인지 학습합니다.</p>
+</section>
+<section id="projective-transformation">
+<h3><strong>2. <a class="reference internal" href="Chapter%202.3%20Projective%20transformation.html"><span class="doc std std-doc">Projective transformation</span></a></strong><a class="headerlink" href="#projective-transformation" title="Permalink to this heading">#</a></h3>
+<p>Projective transformation의 개념과 central projection에 대해 학습합니다.</p>
+</section>
+<section id="hierarchy-of-transformation">
+<h3><strong>3. <a class="reference internal" href="Chapter%202.4%20Hierarchy%20of%20Transformation.html"><span class="doc std std-doc">Hierarchy of transformation</span></a></strong><a class="headerlink" href="#hierarchy-of-transformation" title="Permalink to this heading">#</a></h3>
+<p>2D projective plane의 transformation들을 중점적으로 다룹니다.<br>
+이 과정에서 transformation의 종류와 invaiants에 대해 학습하면서 각 변환에 대해 실습해봅니다.</p>
+</section>
+<section id="recovery-of-affine-and-metric-properties-from-images">
+<h3><strong>4. <a class="reference internal" href="Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"><span class="doc std std-doc">Recovery of affine and metric properties from images</span></a></strong><a class="headerlink" href="#recovery-of-affine-and-metric-properties-from-images" title="Permalink to this heading">#</a></h3>
+<p>Projective transformation에 의한 왜곡을 제거해 affine 속성이나 metric 속성을 복원합니다<br>
+이 과정에서 vanishing point와 vanishing line을 이용해 affine 속성을 복원하는 방법, 직교하는 직선을 이용해 metric을 복원하는 방법을 실습해봅니다.</p>
+</section>
+<section id="reference">
+<h3><strong>Reference</strong><a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.amazon.com/Multiple-View-Geometry-Computer-Vision/dp/0521540518">Multiple View Geometry in Computer Vision</a></p></li>
+</ol>
+</section>
+</section>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -394,20 +451,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="Chapter%202.1.html"
+       href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Chapter 2.2 ….</p>
+        <p class="prev-next-title">Introduction - a Tour of Multiple View Geometry</p>
       </div>
     </a>
     <a class="right-next"
-       href="Chapter2.html"
+       href="Chapter%202.2%20The%202D%20projective%20plane.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Class I. Isometries</p>
+        <p class="prev-next-title"><strong>2.1. The 2D projective plane</strong></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -420,6 +477,27 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>학습 목표</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-projective-plane"><strong>1. <span class="xref myst">2D Projective Plane</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#projective-transformation"><strong>2. <span class="xref myst">Projective transformation</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hierarchy-of-transformation"><strong>3. <span class="xref myst">Hierarchy of transformation</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recovery-of-affine-and-metric-properties-from-images"><strong>4. <span class="xref myst">Recovery of affine and metric properties from images</span></strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference"><strong>Reference</strong></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
