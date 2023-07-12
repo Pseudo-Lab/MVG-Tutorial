@@ -1,4 +1,4 @@
-# **2. Project transformation**
+# **2.2 Project transformation**
 
 2D projective geometry는 projective plane $\mathbb{P}^2$ 의 *projectivies*라고 알려져있는 transformation들에서 invariant한 특성들의 연구입니다. 
 

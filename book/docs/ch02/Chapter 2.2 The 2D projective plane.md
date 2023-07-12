@@ -1,4 +1,4 @@
-# **1. The 2D projective plane**
+# **2.1. The 2D projective plane**
 
 점을 평면에서 표현할 때 보통 실수평면($\mathbb{R}^2$)에서 ($x,y$)이고 벡터공간에서 ($x,y$)는 벡터입니다. 
 
@@ -7,7 +7,7 @@
 ### **Row and column vectors**
 >볼드체 $\mathbf{x} = (x,y)^T$ 는 항상 column vector 를 나타내고 row vector는 $\mathbf{x}^T=(x,y)$ 로 표현합니다.
 
-## **1.1 Points and lines**
+## **2.1.1 Points and lines**
 
 ### **Homogeneous representation of lines**
 
@@ -47,7 +47,7 @@ $\text{l}\cdot(\text{l} \ \times \ \text{l}')=\text{l}'\cdot(\text{l} \ \times \
 ### **Line joining points**
 > 두 점을 지나는 직선은 $\text{l}=\text{x} \ \times \ \text{x}'$ 로 구할 수 있습니다. 
 
-## **1.2 Ideal points and the line at infinity**
+## **2.1.2 Ideal points and the line at infinity**
 
 >평행한 두 직선 $ax+by+c=0$ 와 $ax+by+c'=0$ 가 있다고 하면 벡터로 표현했을 때는 $\text{l}=(a,b,c)^T$ $\text{l}'=(a,b,c')^T$ 로 쓸 수 있습니다.
 
