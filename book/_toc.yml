@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry
+- file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry.md
 - file: docs/ch02/Chapter 2 Projective Geometry and Transformations of 2D.md
   sections:
   - file: docs/ch02/Chapter 2.2 The 2D projective plane.md
