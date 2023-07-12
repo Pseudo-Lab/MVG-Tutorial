@@ -5,8 +5,13 @@ format: jb-book
 root: intro
 chapters:
 - file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry
-- file: docs/ch02/Chapter 2 Projective
+- file: docs/ch02/Chapter 2 Projective Geometry and Transformations of 2D.md
   sections:
-  - file: docs/ch02/Chapter 2.1
-  - file: docs/ch02/Chapter 2.2
-  - file: docs/ch02/Chapter2
+  - file: docs/ch02/Chapter 2.2 The 2D projective plane.md
+  - file: docs/ch02/Chapter 2.3 Projective transformation.md
+  - file: docs/ch02/Chapter 2.4 Hierarchy of Transformation.ipynb
+  - file: docs/ch02/Chapter 2.7 Recovery of affine and metric properties from images.ipynb
+- file : docs/ch03/Chapter 3 Projective Geometry and Transformations of 3D.md
+  sections:
+    - file: docs/ch03/Chapter 3.2 Representing and transforming planes, lines and quadrics.md
+    - file: docs/ch03/Chapter 3.4 The hierarchy of transformations.ipynb
