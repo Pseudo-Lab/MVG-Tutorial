@@ -5,7 +5,7 @@
 이 section에서는 homogenous의 관점에서 본 점, 선, 면을 어떻게 표현하는지 알아보겠습니다.
 
 ### **Row and column vectors**
->볼드체 $\bold{x} = (x,y)^T$ 는 항상 column vector 를 나타내고 row vector는 $\bold{x}^T=(x,y)$ 로 표현합니다.
+>볼드체 $\mathbf{x} = (x,y)^T$ 는 항상 column vector 를 나타내고 row vector는 $\mathbf{x}^T=(x,y)$ 로 표현합니다.
 
 ## **1.1 Points and lines**
 
@@ -19,7 +19,7 @@
 
 ### **Homogeneous representation of points**
 
->직선 $\bold{l}=(a,b,c)^T$ 위에 존재하는 한 점을 $(x,y)^T$라 하면, 이 $(x,y)^T$는 $ax+by+c=0$ 을 만족시키는 점들의 집합이며 이 식을 벡터 간의 내적의 식으로 바꿔주면 $(x,y,1)(a,b,c)^T$ = $(x,y,1)\bold{l}= 0$ 으로 바꿀 수 있습니다.<br>
+>직선 $\mathbf{l}=(a,b,c)^T$ 위에 존재하는 한 점을 $(x,y)^T$라 하면, 이 $(x,y)^T$는 $ax+by+c=0$ 을 만족시키는 점들의 집합이며 이 식을 벡터 간의 내적의 식으로 바꿔주면 $(x,y,1)(a,b,c)^T$ = $(x,y,1)\mathbf{l}= 0$ 으로 바꿀 수 있습니다.<br>
 
 결과적으로 직선 위에 존재하는 한 점 $(x,y)^T$ 에서 마지막 항에 1을 추가한 것과 같으며, 점의 homogeneous 표현은 이렇게 뒤에 1을 하나 덧붙이는 방법으로 할 수 있습니다.
 
@@ -64,7 +64,7 @@ homogeneous vector $\text{x}=(x_1,x_2,x_3)$ 에서 $x_3=0$ 인 경우를 ideal p
 >모든 ideal point의 집합은 $x_1:x_2$ 의 비율을 가진 점들의 모임일 것이고, 이들은 특정한 직선 위에 있는 점들 일 것입니다. 우리는 이것을 line at infinity라고 말하고 $\text{l}_∞ = (0,0,1)^T$ 로 표현합니다.
 
 다음과 같은 직선의 방정식을 만족함으로써 점 $(x_1,x_2,0)$은 직선 $\text{l}_∞$ 위에 있음을 알 수 있습니다.
-$(x_1,x_2,0)\text{l}_\infin=(x_1,x_2,0)(0,0,1)^T=0$
+$(x_1,x_2,0)\text{l}_\infty=(x_1,x_2,0)(0,0,1)^T=0$
 
 ### **Duality**
 >2D projective geometry에서 어떤 정리가 있을 때 점과 직선의 역할을 바꾸어도 같은 성질을 duality라고 합니다.<br>
