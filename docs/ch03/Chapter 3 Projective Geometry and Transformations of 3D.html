@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 2 - Projective … &#8212; PseudoLab [MVG-Tutorial]</title>
+    <title>Chapter 3 - Projective Geometry and Transformation of 3D &#8212; PseudoLab [MVG-Tutorial]</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch02/Chapter 2 Projective';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch03/Chapter 3 Projective Geometry and Transformations of 3D';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Chapter 2.2 …." href="Chapter%202.1.html" />
-    <link rel="prev" title="Introduction - a Tour of Multiple View Geometry" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html" />
+    <link rel="next" title="Chapter 3.2 Representing and transforming planes, lines and quadrics" href="Chapter%203.2%20Representing%20and%20transforming%20planes%2C%20lines%20and%20quadrics.html" />
+    <link rel="prev" title="2.7 Recovery of affine and metric properties from images" href="../ch02/Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,13 +154,17 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html">Introduction - a Tour of Multiple View Geometry</a></li>
 
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Chapter 2 - Projective …</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Chapter%202.1.html">Chapter 2.2 ….</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Chapter%202.2.html">Chapter 2.1 ….</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Chapter2.html">Class I. Isometries</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch02/Chapter%202%20Projective%20Geometry%20and%20Transformations%20of%202D.html"><b>Chapter 2 - Projective Geometry and Transformation of 2D</b></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch02/Chapter%202.2%20The%202D%20projective%20plane.html"><strong>1. The 2D projective plane</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch02/Chapter%202.3%20Projective%20transformation.html"><strong>2. Project transformation</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch02/Chapter%202.4%20Hierarchy%20of%20Transformation.html">Chapter 2.4 A hierarchy of transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch02/Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"><strong>2.7 Recovery of affine and metric properties from images</strong></a></li>
 
-
-
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#"><b>Chapter 3 - Projective Geometry and Transformation of 3D</b></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%203.2%20Representing%20and%20transforming%20planes%2C%20lines%20and%20quadrics.html">Chapter 3.2 Representing and transforming planes, lines and quadrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%203.4%20The%20hierarchy%20of%20transformations.html">3.4 The hierarchy of transformations</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +238,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch02/Chapter 2 Projective.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch03/Chapter 3 Projective Geometry and Transformations of 3D.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -264,7 +268,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/ch02/Chapter 2 Projective.md" target="_blank"
+      <li><a href="../../_sources/docs/ch03/Chapter 3 Projective Geometry and Transformations of 3D.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +337,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -344,11 +350,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 2 - Projective …</h1>
+    <h1><b>Chapter 3 - Projective Geometry and Transformation of 3D</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b"><b>학습 목표</b></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1-representing-and-transforming-planes-lines-and-quadrics"><b>1. Representing and transforming planes, lines and quadrics</b></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-the-hierarchy-of-transformations"><b>2. The Hierarchy of transformations</b></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -358,9 +377,32 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-2-projective">
-<h1>Chapter 2 - Projective …<a class="headerlink" href="#chapter-2-projective" title="Permalink to this heading">#</a></h1>
-<p>이 챕터에서는 …를 학습하고 실습해봅니다.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="b-chapter-3-projective-geometry-and-transformation-of-3d">
+<h1><b>Chapter 3 - Projective Geometry and Transformation of 3D<a class="headerlink" href="#b-chapter-3-projective-geometry-and-transformation-of-3d" title="Permalink to this heading">#</a></h1>
+<p>이 챕터에서는 3D projective geometry에 대해 간단하게 학습합니다. 이전 Chapter 2의 일반적인 내용으로 깊게 다루지 않고, 3D에서의 transformation들을 중점적으로 학습합니다.</p>
+<p>Sub-section은 크게 2가지로 이뤄지며 각각 아래와 같습니다.</p>
+<ol class="arabic simple">
+<li><p>Representing and transforming planes, lines and quadrics</p></li>
+<li><p>The Hierarchy of transformations</p></li>
+</ol>
+<section id="b">
+<h2><b>학습 목표<a class="headerlink" href="#b" title="Permalink to this heading">#</a></h2>
+<section id="b-1-representing-and-transforming-planes-lines-and-quadrics">
+<h3><b>1. Representing and transforming planes, lines and quadrics<a class="headerlink" href="#b-1-representing-and-transforming-planes-lines-and-quadrics" title="Permalink to this heading">#</a></h3>
+<p>3D projective plane에서의 점, 선의 표현과 성질에 대한 내용을 학습합니다.</p>
+</section>
+<section id="b-2-the-hierarchy-of-transformations">
+<h3><b>2. The Hierarchy of transformations<a class="headerlink" href="#b-2-the-hierarchy-of-transformations" title="Permalink to this heading">#</a></h3>
+<p>3D projective plane의 transformation들을 중점적으로 다룹니다.<br>
+이 과정에서 transformation의 종류와 invaiants에 대해 학습하면서 각 변환에 대해 실습해봅니다.</p>
+</section>
+<section id="reference">
+<h3>Reference<a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.amazon.com/Multiple-View-Geometry-Computer-Vision/dp/0521540518">Multiple View Geometry in Computer Vision</a></p></li>
+</ol>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -378,7 +420,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./docs/ch02"
+            path: "./docs/ch03"
         },
         predefinedOutput: true
     }
@@ -397,20 +439,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html"
+       href="../ch02/Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction - a Tour of Multiple View Geometry</p>
+        <p class="prev-next-title"><strong>2.7 Recovery of affine and metric properties from images</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="Chapter%202.1.html"
+       href="Chapter%203.2%20Representing%20and%20transforming%20planes%2C%20lines%20and%20quadrics.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter 2.2 ….</p>
+        <p class="prev-next-title">Chapter 3.2 Representing and transforming planes, lines and quadrics</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -423,6 +465,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#b"><b>학습 목표</b></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-1-representing-and-transforming-planes-lines-and-quadrics"><b>1. Representing and transforming planes, lines and quadrics</b></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-2-the-hierarchy-of-transformations"><b>2. The Hierarchy of transformations</b></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

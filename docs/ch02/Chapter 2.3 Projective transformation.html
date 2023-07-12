@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 2 - Projective … &#8212; PseudoLab [MVG-Tutorial]</title>
+    <title>2. Project transformation &#8212; PseudoLab [MVG-Tutorial]</title>
   
   
   
@@ -62,11 +62,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch02/Chapter 2 Projective';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch02/Chapter 2.3 Projective transformation';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Chapter 2.2 …." href="Chapter%202.1.html" />
-    <link rel="prev" title="Introduction - a Tour of Multiple View Geometry" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html" />
+    <link rel="next" title="Chapter 2.4 A hierarchy of transformations" href="Chapter%202.4%20Hierarchy%20of%20Transformation.html" />
+    <link rel="prev" title="1. The 2D projective plane" href="Chapter%202.2%20The%202D%20projective%20plane.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,13 +156,17 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html">Introduction - a Tour of Multiple View Geometry</a></li>
 
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Chapter 2 - Projective …</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="Chapter%202.1.html">Chapter 2.2 ….</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Chapter%202.2.html">Chapter 2.1 ….</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Chapter2.html">Class I. Isometries</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Chapter%202%20Projective%20Geometry%20and%20Transformations%20of%202D.html"><b>Chapter 2 - Projective Geometry and Transformation of 2D</b></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.2%20The%202D%20projective%20plane.html"><strong>1. The 2D projective plane</strong></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#"><strong>2. Project transformation</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.4%20Hierarchy%20of%20Transformation.html">Chapter 2.4 A hierarchy of transformations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"><strong>2.7 Recovery of affine and metric properties from images</strong></a></li>
 
-
-
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch03/Chapter%203%20Projective%20Geometry%20and%20Transformations%20of%203D.html"><b>Chapter 3 - Projective Geometry and Transformation of 3D</b></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch03/Chapter%203.2%20Representing%20and%20transforming%20planes%2C%20lines%20and%20quadrics.html">Chapter 3.2 Representing and transforming planes, lines and quadrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch03/Chapter%203.4%20The%20hierarchy%20of%20transformations.html">3.4 The hierarchy of transformations</a></li>
 </ul>
 </li>
 </ul>
@@ -234,7 +240,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch02/Chapter 2 Projective.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch02/Chapter 2.3 Projective transformation.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -264,7 +270,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/ch02/Chapter 2 Projective.md" target="_blank"
+      <li><a href="../../_sources/docs/ch02/Chapter 2.3 Projective transformation.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +339,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -344,11 +352,25 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 2 - Projective …</h1>
+    <h1>2. Project transformation</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projectivity"><strong>Projectivity</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projective-transformation"><strong>Projective transformation</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-of-planes"><strong>Mapping of planes</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-the-projective-distortion-from-a-perspective-image"><strong>Removing the projective distortion from a perspective image</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference"><strong>Reference</strong></a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -358,11 +380,54 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-2-projective">
-<h1>Chapter 2 - Projective …<a class="headerlink" href="#chapter-2-projective" title="Permalink to this heading">#</a></h1>
-<p>이 챕터에서는 …를 학습하고 실습해봅니다.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="project-transformation">
+<h1><strong>2. Project transformation</strong><a class="headerlink" href="#project-transformation" title="Permalink to this heading">#</a></h1>
+<p>2D projective geometry는 projective plane <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> 의 <em>projectivies</em>라고 알려져있는 transformation들에서 invariant한 특성들의 연구입니다.</p>
+<p>Projection은  <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> 에서의 한점에서 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> 안의 한 점으로 반대로 projection 할 수 있으며, 선에서 선으로 projection 됩니다.</p>
+<section id="projectivity">
+<h2><strong>Projectivity</strong><a class="headerlink" href="#projectivity" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>Projectivity는 역이 성립하는 평면 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span> 에서 <span class="math notranslate nohighlight">\(\mathbb{P}^2\)</span>로의 mapping projection <span class="math notranslate nohighlight">\(h\)</span>를 의미합니다. 예를 들어, <span class="math notranslate nohighlight">\(\mathbf{x_1}\)</span>, <span class="math notranslate nohighlight">\(\mathbf{x_2}\)</span> <span class="math notranslate nohighlight">\(\mathbf{x_3}\)</span>같은 선 상에 존재한다면, <span class="math notranslate nohighlight">\(h(\mathbf{x_1})\)</span>, <span class="math notranslate nohighlight">\(h(\mathbf{x_2})\)</span>, <span class="math notranslate nohighlight">\(h(\mathbf{x_3})\)</span>도 같은 선 상에 존재합니다.</p>
+</div></blockquote>
+<p>이러한 projection을 collineation, projective transformation, homography 라고도 부릅니다.</p>
+</section>
+<section id="projective-transformation">
+<h2><strong>Projective transformation</strong><a class="headerlink" href="#projective-transformation" title="Permalink to this heading">#</a></h2>
+<blockquote>
+<div><p>Plane의 Projective transformation은 homogeneous 3-vector에서 non-singular 3x3 행렬에 의해 표현되는 선형 변환입니다.<br>
+<span class="math notranslate nohighlight">\(\begin{pmatrix}x\prime_1 \\ x\prime_2 \\ x\prime_3 \end{pmatrix} = \begin{bmatrix} h_{11} &amp; h_{12} &amp; h_{13} \\  h_{21} &amp; h_{22} &amp; h_{23} \\ h_{31} &amp; h_{32} &amp; h_{33}\end{bmatrix} \begin{pmatrix}x_1 \\ x_2 \\ x_3 \end{pmatrix}\)</span><br>
+또는, 간결하게 <span class="math notranslate nohighlight">\(\mathbf{x^\prime = \mathtt{H}x}\)</span> 로 표현할 수 있습니다.</p>
+</div></blockquote>
+<p><span class="math notranslate nohighlight">\(H\)</span>는 homogeneous matrix 이기 때문에 상수를 곱해도 동일합니다. scale factor로 나눠주면 결과적으로 동일하기 때문입니다. 따라서 H의 dof는 8이며, scale factor를 제외한 나머지 원소들입니다.</p>
+<p><img alt="figure2.1" src="../../_images/2.1.png" /></p>
+<p>Projective transformation은 동일한 projective space 내 모든 plane을 투영적으로 동등하게 projection 시키며, 모든 이 사영 속성들은 invariant 합니다. 위 그림 2.1의 ray 모델에서 projective transformation은 <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>의 linear transformation 입니다.</p>
+<br>
+<p><img alt="figure2.3" src="../../_images/2.3.png" /></p>
+<section id="mapping-of-planes">
+<h3><strong>Mapping of planes</strong><a class="headerlink" href="#mapping-of-planes" title="Permalink to this heading">#</a></h3>
+<p>위 그림 2.3은 동일한 projective space에 존재하는 두 평면이 존재할 때 원점 <span class="math notranslate nohighlight">\(\mathbf{O}\)</span>과 이어진 ray가 있다고 할 때, 동일 ray 위에 존재하는 점들은 같은 점이라는 것을 보여줍니다.
+좌표 시스템이 평면에서 정의되고 있으면서, 그 점이 homogeneous coordinate로 표현된다면, Central projeciton은 <span class="math notranslate nohighlight">\(\mathbf{x'=Hx}\)</span>로 표현할 수 있습니다.</p>
+<p><img alt="figure2.4" src="../../_images/2.4.png" /></p>
+</section>
+<section id="removing-the-projective-distortion-from-a-perspective-image">
+<h3><strong>Removing the projective distortion from a perspective image</strong><a class="headerlink" href="#removing-the-projective-distortion-from-a-perspective-image" title="Permalink to this heading">#</a></h3>
+<p>Perspective 이미지에서 real world에서의 모양은 왜곡됩니다. 위 그림 2.4의 a는 그 예를 보여줍니다. 위에서 얘기했듯, projective projection의 dof는 8입니다. 따라서 4개의 점을 지정해서 projective projection을 정의할 수 있는데, 여기서는 원래는 평행한 두 직선을 지정해 다시 평행해지도록 transformation을 적용해 사영 왜곡을 삭제했습니다.</p>
+<p><span class="math notranslate nohighlight">\(x' = {x'_1 \over x'_3} = {h_{11}x+h_{12}y+h_{13} \over h_{31}x+h_{32}y+h_{33}}, \ \ \ \ \ y'= {x'_2 \over x'_3} = {h_{21}x+h_{22}y+h_{23} \over h_{31}x+h_{32}y+h_{33}}.\)</span></p>
+<p><span class="math notranslate nohighlight">\(x'(h_{31}x+h_{32}y+h_{33})  = h_{11}x+h_{12}y+h_{13}\)</span></p>
+<p><span class="math notranslate nohighlight">\(y'(h_{31}x+h_{32}y+h_{33})  = h_{21}x+h_{22}y+h_{23}\)</span></p>
+<p>homogeneous 좌표로부터 inhomogeneous 좌표로의 변형은 위와 같이 표현할 수 있습니다. 각 포인트는 H원소에 대한 두 등식으로 표현될 수 있습니다.</p>
+<p>위와 같은 equation을 통해 projective transformation에 의해 점이 이동할 위치를 계산할 수 있습니다. 점을 선정할 때 주의할 점은 세 점이 같은 직선 위에 존재하면 안 된다는 것입니다.
+이렇게 계산된 projective transformation <span class="math notranslate nohighlight">\(\mathbf{H}\)</span>는 non-singular matrix로 역행렬이 존재하며, 이것을 적용하면 반대로 돌아갈 수 있습니다.</p>
+<p><img alt="figure2.4" src="../../_images/2.5.png" /></p>
+<p>그림 2.5는 <span class="math notranslate nohighlight">\(\mathbf{x'=HX}\)</span> 수식으로 생길 수 있는 다양한 projective transformation의 예를 보여줍니다. 이 각각의 transformation은 이후 다른 Chapter들에서 학습합니다.</p>
+</section>
+<section id="reference">
+<h3><strong>Reference</strong><a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Multiple view geometry in computer vision chapter 2.3</p></li>
+</ol>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -397,20 +462,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html"
+       href="Chapter%202.2%20The%202D%20projective%20plane.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction - a Tour of Multiple View Geometry</p>
+        <p class="prev-next-title"><strong>1. The 2D projective plane</strong></p>
       </div>
     </a>
     <a class="right-next"
-       href="Chapter%202.1.html"
+       href="Chapter%202.4%20Hierarchy%20of%20Transformation.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chapter 2.2 ….</p>
+        <p class="prev-next-title">Chapter 2.4 A hierarchy of transformations</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -423,6 +488,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projectivity"><strong>Projectivity</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projective-transformation"><strong>Projective transformation</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mapping-of-planes"><strong>Mapping of planes</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-the-projective-distortion-from-a-perspective-image"><strong>Removing the projective distortion from a perspective image</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reference"><strong>Reference</strong></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
