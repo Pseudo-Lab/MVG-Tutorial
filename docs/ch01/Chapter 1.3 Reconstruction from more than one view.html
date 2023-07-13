@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Chapter 3.2 Representing and transforming planes, lines and quadrics &#8212; PseudoLab [MVG-Tutorial]</title>
+    <title>1.3 Reconstruction from more than one view &#8212; PseudoLab [MVG-Tutorial]</title>
   
   
   
@@ -64,12 +64,10 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch03/Chapter 3.2 Representing and transforming planes, lines and quadrics';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/ch01/Chapter 1.3 Reconstruction from more than one view';</script>
     <link rel="shortcut icon" href="../../_static/PseudoLab_logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="3.4 The hierarchy of transformations" href="Chapter%203.4%20The%20hierarchy%20of%20transformations.html" />
-    <link rel="prev" title="Chapter 3 - Projective Geometry and Transformation of 3D(작성 중)" href="Chapter%203%20Projective%20Geometry%20and%20Transformations%20of%203D.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -160,8 +158,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../ch01/Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html"><strong>Chapter 1. Introduction - a Tour of Multiple View Geometry</strong></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="Chapter%201%20Introduction%20-%20a%20Tour%20of%20Multiple%20View%20Geometry.html"><strong>Chapter 1. Introduction - a Tour of Multiple View Geometry</strong></a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../ch02/Chapter%202%20Projective%20Geometry%20and%20Transformations%20of%202D.html"><strong>Chapter 2 - Projective Geometry and Transformation of 2D</strong></a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -171,9 +169,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../ch02/Chapter%202.7%20Recovery%20of%20affine%20and%20metric%20properties%20from%20images.html"><strong>2.4. Recovery of affine and metric properties from images</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Chapter%203%20Projective%20Geometry%20and%20Transformations%20of%203D.html"><strong>Chapter 3 - Projective Geometry and Transformation of 3D(작성 중)</strong></a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Chapter 3.2 Representing and transforming planes, lines and quadrics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Chapter%203.4%20The%20hierarchy%20of%20transformations.html">3.4 The hierarchy of transformations</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../ch03/Chapter%203%20Projective%20Geometry%20and%20Transformations%20of%203D.html"><strong>Chapter 3 - Projective Geometry and Transformation of 3D(작성 중)</strong></a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../ch03/Chapter%203.2%20Representing%20and%20transforming%20planes%2C%20lines%20and%20quadrics.html">Chapter 3.2 Representing and transforming planes, lines and quadrics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ch03/Chapter%203.4%20The%20hierarchy%20of%20transformations.html">3.4 The hierarchy of transformations</a></li>
 </ul>
 </li>
 </ul>
@@ -247,7 +245,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch03/Chapter 3.2 Representing and transforming planes, lines and quadrics.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/pseudo-lab/MVG-Tutorial/issues/new?title=Issue%20on%20page%20%2Fdocs/ch01/Chapter 1.3 Reconstruction from more than one view.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +275,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../../_sources/docs/ch03/Chapter 3.2 Representing and transforming planes, lines and quadrics.md" target="_blank"
+      <li><a href="../../_sources/docs/ch01/Chapter 1.3 Reconstruction from more than one view.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -359,7 +357,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Chapter 3.2 Representing and transforming planes, lines and quadrics</h1>
+    <h1>1.3 Reconstruction from more than one view</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -369,15 +367,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planes">3.2.1 Planes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#join-and-incidence-relations">Join and incidence relations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#three-points-define-a-plane">Three points define a plane</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#three-planes-define-a-point">Three planes define a point</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">평면의 사영 변환</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrized-points-on-a-plane">Parametrized points on a plane</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lines">3.2.2 Lines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference"><strong>Reference</strong></a></li>
 </ul>
             </nav>
         </div>
@@ -389,69 +379,35 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="chapter-3-2-representing-and-transforming-planes-lines-and-quadrics">
-<h1>Chapter 3.2 Representing and transforming planes, lines and quadrics<a class="headerlink" href="#chapter-3-2-representing-and-transforming-planes-lines-and-quadrics" title="Permalink to this heading">#</a></h1>
-<section id="planes">
-<h2>3.2.1 Planes<a class="headerlink" href="#planes" title="Permalink to this heading">#</a></h2>
-<p>3차원의 평면은 다음 식으로 나타낼 수 있습니다.
-$<span class="math notranslate nohighlight">\(\pi_1X + \pi_2Y + \pi_3Z + \pi_4 = 0\)</span>$
-homogeneous 좌표계에서는 스케일 값은 고려하지 않으므로, 각 미지수에 곱해진 값의 비율이 중요합니다. 따라서 평면은 dof 3(degree of freedom, 자유도)을 가집니다.</p>
-<p>즉, 평면의 homogeneous representation로 나타내보면 다음과 같습니다.
-$<span class="math notranslate nohighlight">\(\pi = (\pi_1, \pi_2, \pi_3, \pi_4)^T\)</span><span class="math notranslate nohighlight">\(
-점 X가 평면 \)</span>\pi<span class="math notranslate nohighlight">\( 위에 있을 때, 간결하게 나타내면 다음과 같습니다.
-\)</span><span class="math notranslate nohighlight">\(\pi^TX = 0\)</span>$</p>
-<section id="join-and-incidence-relations">
-<h3>Join and incidence relations<a class="headerlink" href="#join-and-incidence-relations" title="Permalink to this heading">#</a></h3>
-<p>3차원 사영 공간에서는 면, 점, 선의 다양한 기하학적 관계가 있습니다.</p>
-<ol class="arabic simple">
-<li><p>동일 직선 상에 있지 않은 점 3개 또는 동일 직선 상에 있지 않은 점 1개와 선 1개로 유일한 평면을 결정할 수 있습니다.</p></li>
-<li><p>서로 다른 2개의 평면은 한 직선에서 교차합니다.</p></li>
-<li><p>서로 다른 3개의 평면은 한 점에서 교차합니다.</p></li>
+  <section id="reconstruction-from-more-than-one-view">
+<h1><strong>1.3 Reconstruction from more than one view</strong><a class="headerlink" href="#reconstruction-from-more-than-one-view" title="Permalink to this heading">#</a></h1>
+<p>이 책의 주요한 주제 중 하나입니다. 가장 간단한 두 개의 이미지의 경우를 먼저 고려해봅니다.</p>
+<p>두 개의 시점의 경우, <span class="math notranslate nohighlight">\(x_i \leftrightarrow x_i'\)</span>의 관계를 가지는 두 이미지가 있다고 합시다. 이 둘은 각각 3D points <span class="math notranslate nohighlight">\(\mathbf{X}_i\)</span>로의 변환을 위한 camera matrix <span class="math notranslate nohighlight">\(\mathbf{P}\)</span>와 <span class="math notranslate nohighlight">\(\mathbf{P'}\)</span>를 갖습니다. 따라서 <span class="math notranslate nohighlight">\(PX_i=x_i\)</span>이며, <span class="math notranslate nohighlight">\(\mathbf{P'}\mathbf{X}_i=x_i'\)</span>입니다. 하지만 우리는 각 이미지 좌표 매칭 쌍 외에 우리는 <span class="math notranslate nohighlight">\(\mathbf{P, P', X_i}\)</span> 모두 모르는 상태입니다. 이 뒤의 챕터에서 이러한 것들을 결정하는 방법에 대해 다룹니다. 여기서는 간단하게만 이야기 하겠습니다.</p>
+<p>3차원 점의 위치를 특정하는 것은 불가능합니다. 아무리 매칭 쌍이 많이 주어졌다고 해도 3차원 좌표를 모르는 건 마찬가지입니다. 여기서 카메라가 보정되어 있지 않은 경우, 이 문제는 사영 변환으로 표현할 수 있습니다.</p>
+<p>좌표의 특정이 불가능한 이유는 사영된 이미지 좌표를 변경하지 않고 각 3D 좌표 <span class="math notranslate nohighlight">\(\mathbf{X}_i\)</span>와 각 camera matrix에 사영 변환을 적용할 수 있기 때문입니다. 적용된 수식은 아래와 같습니다.</p>
+<div class="math notranslate nohighlight">
+\[
+\mathbf{P}_j\mathbf{X}_i = (\mathbf{P}_j\mathbf{H}^{-1})(\mathbf{H}\mathbf{X}_i)
+\]</div>
+<p>여기서 j는 이미지의 번호이며, 사실상 어떤 이미지를 선택해도 동일합니다. 또한, 여기서 <span class="math notranslate nohighlight">\(H\)</span>는 4x4의 사영 변환 행렬이며 임의의 값으로 정해집니다. 우리는 이러한 복원을 projective ambiguity 또는 projective reconstruction 이라고 말합니다. 하지만 이것은 최악의 경우이고, 최소 7개의 좌표 매칭 쌍이 존재한다면 여기서도 충분히 3D 복원이 가능합니다.</p>
+<p>두 시점에서 3D 점들을 복원하는 가장 기본적인 방법은 fundamental matrix 입니다. 이것은 이미지 좌표 <span class="math notranslate nohighlight">\(x_i\)</span>와 <span class="math notranslate nohighlight">\(x_i'\)</span>가 있을 때, 이들이 같은 3D 좌표에 매핑된다는 제약 조건을 갖게 해줍니다. fundamental matrix <span class="math notranslate nohighlight">\(\mathbf{F}\)</span>가 주어졌을 때, 매칭 좌표 쌍 <span class="math notranslate nohighlight">\(x_i, x_i'\)</span>는  <span class="math notranslate nohighlight">\(x_i'\mathbf{F}x_i=0\)</span> 이라는 수식을 만족하며, <span class="math notranslate nohighlight">\(\mathbf{F}\)</span>는 rank 2의 3x3 행렬입니다. <span class="math notranslate nohighlight">\(\mathbf{F}\)</span>가 알려지지 않은 경우, 일련의 대응점들을 활용해 계산해낼 수 있습니다.</p>
+<p>한 쌍의 camera matrix <span class="math notranslate nohighlight">\(\mathbf{P, P'}\)</span>는 <span class="math notranslate nohighlight">\(\mathbf{F}\)</span>를 유일하게 결정할 수 있고, 반대로 <span class="math notranslate nohighlight">\(\mathbf{F}\)</span>는 한 쌍의 camera matrix를 결정할 수 있습니다. 따라서, fundamental matrix는 두 시점의 사영 기하를 캡슐화하며 3D의 사영 변환에 의해 바뀌지 않습니다.</p>
+<p>복원하는 과정을 간단하게 정리하면 다음과 같습니다.</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>두 개의 뷰에서 여러 개의 좌표 매칭 쌍<span class="math notranslate nohighlight">\((x_i, x_i')\)</span>들이 주어지면, 공면(coplanarity) 방정식 <span class="math notranslate nohighlight">\(x_i'Fx_i=0\)</span>를 기반으로하는 F의 원소들에 대한 선형 방정식들을 구성합니다.</p></li>
+<li><p>구성된 연립 선형 방정식들의 해로 <span class="math notranslate nohighlight">\(F\)</span>를 찾습니다.</p></li>
+<li><p>이후 챕터에(section 9.5) 등장하는 공식에 따라 <span class="math notranslate nohighlight">\(F\)</span>를 통해 한 쌍의 camera matrix를 계산합니다.</p></li>
+<li><p>계산된 camera matrix <span class="math notranslate nohighlight">\(P,\)</span> <span class="math notranslate nohighlight">\(P'\)</span>를 이용해 이미지 좌표 매칭쌍들을 사영해 <span class="math notranslate nohighlight">\(X_i\)</span>를 찾습니다. 이후 삼각측량(triangulation)을 활용해 3D 공간 좌표를 결정합니다.</p></li>
 </ol>
-</section>
-<section id="three-points-define-a-plane">
-<h3>Three points define a plane<a class="headerlink" href="#three-points-define-a-plane" title="Permalink to this heading">#</a></h3>
-<p>점 3개가 평면 <span class="math notranslate nohighlight">\(\pi\)</span> 위에 있다고 가정하면, <span class="math notranslate nohighlight">\(\pi^TX_i = 0\)</span> (i=1,2,3) 이므로, 행렬로 나타내보면 다음과 같다.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix}X_1^T \\ X_2^T \\ X_3^T \end{bmatrix} \pi = 0\end{split}\]</div>
-<p>단, 3개의 점은 선형 독립이어야(동일 직선 상에 있지 않은 점 3개) 고유한 평면 방정식을 구할 수 있다. 이 경우에는  rank는 3입니다. 따라서 평면 <span class="math notranslate nohighlight">\(\pi\)</span>는 1차원 null space 로 고유하게 구할 수 있습니다. 만약 좌변의 왼쪽 행렬 rank가 2이고 null space가 2차원이면 점은 동일선상에 존재하며 그 선을 축으로 하는 pencil of plane을 정의할 수 있습니다.</p>
-<p>null space를 사용하지 않고 좀 더 간단하게 평면을 구할 수 있는 방법도 있습니다. 평면 <span class="math notranslate nohighlight">\(\pi\)</span> 를 정의하는 세 점 <span class="math notranslate nohighlight">\(X_i\)</span> 와 일반 점이 X로 구성된 행렬 <span class="math notranslate nohighlight">\(M = [X, X_1, X_2, X_3]\)</span>가 있다고 할 때, 점 X가 평면 <span class="math notranslate nohighlight">\(\pi\)</span> 위에 있으면 행렬식 <span class="math notranslate nohighlight">\(det M = 0\)</span>이 됩니다.</p>
-<p>열 X에 대해서 행렬식을 전개하면 다음과 같습니다.</p>
-<div class="math notranslate nohighlight">
-\[det M = x_1D_{234}-x_2D_{134}+x_3D_{124}-x_4D_{123}\]</div>
-<p><span class="math notranslate nohighlight">\(D_{jkl}\)</span>은 4x3 행렬 <span class="math notranslate nohighlight">\([X_1, X_2, X_3]\)</span>의 jkl 행으로 구성된 행렬식</p>
-<p><span class="math notranslate nohighlight">\(\pi\)</span>의 점에 대해 det M = 0이므로, 평면 계수는 다음과 같습니다.</p>
-<div class="math notranslate nohighlight">
-\[\pi = (D_{234}-D_{134}+D_{124}-D_{123})^T\]</div>
-<p>이 식은 다음 식의 null space 해가 됩니다.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix}X_1^T \\ X_2^T \\ X_3^T \end{bmatrix} \pi = 0\end{split}\]</div>
-</section>
-<section id="three-planes-define-a-point">
-<h3>Three planes define a point<a class="headerlink" href="#three-planes-define-a-point" title="Permalink to this heading">#</a></h3>
-<p>세 개의 평면 <span class="math notranslate nohighlight">\(\pi_i\)</span> (i=1,2,3) 이 있을 때, 세 평면의 교점 X는 다음 행렬식을 만족한다.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{bmatrix}\pi_1^T \\ \pi_2^T \\ \pi_3^T \end{bmatrix} X = 0\end{split}\]</div>
-</section>
-<section id="id1">
-<h3>평면의 사영 변환<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<p>점 변환 식에서 평면 변환 식으로 바꾼 식은 다음과 같습니다.
-$<span class="math notranslate nohighlight">\(\pi^{\prime} = H^{-T}\pi\)</span>$</p>
-</section>
-<section id="parametrized-points-on-a-plane">
-<h3>Parametrized points on a plane<a class="headerlink" href="#parametrized-points-on-a-plane" title="Permalink to this heading">#</a></h3>
-<p>평면 <span class="math notranslate nohighlight">\(\pi\)</span>상의 점을 다음으로 표현할 수 있습니다.
-$<span class="math notranslate nohighlight">\(X = Mx\)</span><span class="math notranslate nohighlight">\(
-4x3 행렬 M의 열은 \)</span>\pi^T<span class="math notranslate nohighlight">\(의 rank 3인 null space를 생성합니다. 수식으로 나타내보면 다음과 같습니다.
-\)</span><span class="math notranslate nohighlight">\(\pi^TM = 0\)</span><span class="math notranslate nohighlight">\(
-M은 유일하지 않습니다. 평면이 \)</span>\pi=(a, b, c, d)^T<span class="math notranslate nohighlight">\(일 때, a가 0이 아니라면 \)</span>M^T = [p|I_{3x3}]<span class="math notranslate nohighlight">\( 으로 나타낼 수 있습니다. 여기서 \)</span>p=(-b/a, -c/a, -d/a)^T$ 입니다.</p>
-</section>
-</section>
-<section id="lines">
-<h2>3.2.2 Lines<a class="headerlink" href="#lines" title="Permalink to this heading">#</a></h2>
-<p>선은 두 점의 연결 또는 두 면의 교차로 정의할 수 있습니다. 3차원 공간에서 dof는 4입니다. 3.1그림에서와 같이 직교하는 평면 2개의 교점으로 정의한 직선을 생각해보면 dof를 계산하기 쉽습니다.</p>
-<p>[Fig 3.1] 직교 평면과의 교점으로 선을 지정할 수 있습니다. 각각의 교점은 dof 2를 가져서 3차원 사영 공간의 직선의 총 dof는 4입니다.</p>
-<p><img alt="ch3_2_figure1" src="../../_images/ch3_2_figure1.jpg" /></p>
+</div></blockquote>
+<p>이에 대한 자세한 부분은 이후 챕터에서 다룹니다.</p>
+<p>지금까지 2 View geometry 까지의 내용을 개요 형태로 훑어보았습니다. 이후 챕터 2에서부터는 위에서 간단히 설명한 내용들을 자세하게 살펴보고 갑니다.</p>
+<section id="reference">
+<h2><strong>Reference</strong><a class="headerlink" href="#reference" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Multiple view geometry in computer vision chapter 1.3</p></li>
+</ol>
 </section>
 </section>
 
@@ -468,7 +424,7 @@ M은 유일하지 않습니다. 평면이 \)</span>\pi=(a, b, c, d)^T<span class
         },
         kernelOptions: {
             name: "python3",
-            path: "./docs/ch03"
+            path: "./docs/ch01"
         },
         predefinedOutput: true
     }
@@ -486,24 +442,6 @@ M은 유일하지 않습니다. 평면이 \)</span>\pi=(a, b, c, d)^T<span class
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Chapter%203%20Projective%20Geometry%20and%20Transformations%20of%203D.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><strong>Chapter 3 - Projective Geometry and Transformation of 3D(작성 중)</strong></p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="Chapter%203.4%20The%20hierarchy%20of%20transformations.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3.4 The hierarchy of transformations</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -522,15 +460,7 @@ M은 유일하지 않습니다. 평면이 \)</span>\pi=(a, b, c, d)^T<span class
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#planes">3.2.1 Planes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#join-and-incidence-relations">Join and incidence relations</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#three-points-define-a-plane">Three points define a plane</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#three-planes-define-a-point">Three planes define a point</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">평면의 사영 변환</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#parametrized-points-on-a-plane">Parametrized points on a plane</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lines">3.2.2 Lines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference"><strong>Reference</strong></a></li>
 </ul>
   </nav></div>
 
