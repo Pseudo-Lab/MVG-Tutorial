@@ -5,7 +5,7 @@ format: jb-book
 root: intro
 chapters:
 - file: docs/ch01/Chapter 1 Introduction - a Tour of Multiple View Geometry.md
-  section:
+  sections:
   - file: book/docs/ch01/Chapter 1.1 Introduction - the ubiquitous projective geometry.md
   - file: book/docs/ch01/Chapter 1.2 Camera projections.md
   - file: book/docs/ch01/Chapter 1.3 Reconstruction from more than one view.md
