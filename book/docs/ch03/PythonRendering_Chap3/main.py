@@ -33,7 +33,7 @@ class SoftwareRender:
     x = 50
     y = 50
     instruction = ['Move Left/Right: AD','Move Forward/Back: WS', 'Move Up/Down: QE',
-                   'Rotation X: Left/Right', 'Rotation Y: Up/Down', 'Rotation Z: OP'
+                   'Rotation X: Left/Right', 'Rotation Y: Up/Down', 'Rotation Z: OP',
                    'Scale: [ / ]']
     instruction_font = pg.font.SysFont('Arial', 20, bold=True)
 
