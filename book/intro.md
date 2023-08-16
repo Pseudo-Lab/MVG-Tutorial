@@ -1,8 +1,8 @@
-# [가짜연구소] MVG-Tutorial
+# **[가짜연구소] MVG-Tutorial**
 
 ---
 
-## MVG-Tutorial
+## **MVG-Tutorial**
 
 ---
 
@@ -11,7 +11,7 @@
 Multiple view geometry in Computer vision 책에 대한 튜토리얼 작성을 목표로 합니다.
 
 
-## Contributors
+## **Contributors**
 
 ---
 

@@ -47,6 +47,8 @@ $\text{l}\cdot(\text{l} \ \times \ \text{l}')=\text{l}'\cdot(\text{l} \ \times \
 ### **Line joining points**
 > 두 점을 지나는 직선은 $\text{l}=\text{x} \ \times \ \text{x}'$ 로 구할 수 있습니다. 
 
+<br>
+
 ## **2.1.2 Ideal points and the line at infinity**
 
 >평행한 두 직선 $ax+by+c=0$ 와 $ax+by+c'=0$ 가 있다고 하면 벡터로 표현했을 때는 $\text{l}=(a,b,c)^T$ $\text{l}'=(a,b,c')^T$ 로 쓸 수 있습니다.
