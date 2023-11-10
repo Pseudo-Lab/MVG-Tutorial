@@ -109,4 +109,4 @@ if __name__ == "__main__":
     matches_dict, all_images, all_keypoints, all_descriptors = find_similar_features(image_folder_path)
     K = get_camera_intrinsic_matrix(all_images)
     # camera_matrices = compute_camera_matrix(matches_dict, K)
-    camera_matrices = compute_camera_matrix(matches_dict, K)
+    camera_matrices = compute_calibrate_matrix(matches_dict, K)
