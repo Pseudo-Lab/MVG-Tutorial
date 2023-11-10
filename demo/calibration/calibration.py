@@ -67,8 +67,46 @@ def compute_camera_matrix(matches_dict, K):
 
     return camera_matrices
 
+def compute_calibrate_matrix(matches_dict, intrinsic_matrix):
+    camera_matrices = []
+    for (i, j), good_matches in matches_dict.items():
+        kp1 = all_keypoints[i]
+        kp2 = all_keypoints[j]
+        
+        src_pts = np.float32([kp1[m.queryIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+        dst_pts = np.float32([kp2[m.trainIdx].pt for m in good_matches]).reshape(-1, 1, 2)
+
+        E, mask = cv2.findEssentialMat(src_pts, dst_pts, K, method=cv2.RANSAC, prob=0.999, threshold=1.0)
+        _, R, t, _ = cv2.recoverPose(E, src_pts, dst_pts, K)
+        
+        P1 = np.hstack((np.eye(3), np.zeros((3, 1))))
+        P2 = np.hstack((R, t))
+        
+        points_3d_hom = cv2.triangulatePoints(P1, P2, src_pts.T, dst_pts.T)
+        points_3d = points_3d_hom / points_3d_hom[3]
+        points_3d_euclidean = points_3d[:3] / points_3d[3]
+        
+        objpoints = np.array([points_3d_euclidean.T], dtype=np.float32)
+        imgpoints = np.array([src_pts], dtype=np.float32)
+
+        image_shape = all_images[0].shape[1], all_images[0].shape[0]
+
+        dist_coeffs = np.zeros((5, 1), dtype=np.float32) 
+        
+        retval, cameraMatrix, distCoeffs, rvecs, tvecs = cv2.calibrateCamera(
+            objpoints, imgpoints, image_shape, intrinsic_matrix, dist_coeffs, flags=cv2.CALIB_USE_INTRINSIC_GUESS
+        )
+        # cameraMatrix : intrinsic matrix
+        # distCoeffs : 렌즈 왜곡 계수
+        # rvecs : 회전 벡터
+        # tvecs : 이동 벡터
+        camera_matrices.append((retval, cameraMatrix, distCoeffs, rvecs, tvecs))
+
+    return camera_matrices
+
 if __name__ == "__main__":
     image_folder_path = '../scan1_train'
     matches_dict, all_images, all_keypoints, all_descriptors = find_similar_features(image_folder_path)
     K = get_camera_intrinsic_matrix(all_images)
+    # camera_matrices = compute_camera_matrix(matches_dict, K)
     camera_matrices = compute_camera_matrix(matches_dict, K)
